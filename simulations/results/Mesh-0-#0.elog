@@ -1,0 +1,490 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1286 rid Mesh-0-20201216-01:33:54-1249 b 1000
+KF p -1 c "" s ""
+MC id 1 c omnetpp::cModule t flooding.simulations.Mesh n Mesh cm 1
+MS id 1 d bgb=300,300
+MC id 2 c Flooding t flooding.Flooding pid 1 n node[0]
+MS id 2 d i=device/laptop;is=n
+MC id 3 c Flooding t flooding.Flooding pid 1 n node[1]
+MS id 3 d i=device/laptop;is=n
+MC id 4 c Flooding t flooding.Flooding pid 1 n node[2]
+MS id 4 d i=device/laptop;is=n
+MC id 5 c Flooding t flooding.Flooding pid 1 n node[3]
+MS id 5 d i=device/laptop;is=n
+MC id 6 c Flooding t flooding.Flooding pid 1 n node[4]
+MS id 6 d i=device/laptop;is=n
+MC id 7 c Flooding t flooding.Flooding pid 1 n node[5]
+MS id 7 d i=device/laptop;is=n
+MC id 8 c Flooding t flooding.Flooding pid 1 n node[6]
+MS id 8 d i=device/laptop;is=n
+MC id 9 c Flooding t flooding.Flooding pid 1 n node[7]
+MS id 9 d i=device/laptop;is=n
+MC id 10 c Flooding t flooding.Flooding pid 1 n node[8]
+MS id 10 d i=device/laptop;is=n
+MC id 11 c Flooding t flooding.Flooding pid 1 n node[9]
+MS id 11 d i=device/laptop;is=n
+GC m 2 g 1048576 n port$i i 0 o 0
+GC m 2 g 1572864 n port$o i 0 o 1
+GC m 3 g 1048576 n port$i i 0 o 0
+GC m 3 g 1572864 n port$o i 0 o 1
+CC sm 2 sg 1572864 dm 3 dg 1048576
+CS sm 2 sg 1572864 d ""
+CC sm 3 sg 1572864 dm 2 dg 1048576
+CS sm 3 sg 1572864 d ""
+GC m 2 g 1048577 n port$i i 1 o 0
+GC m 2 g 1572865 n port$o i 1 o 1
+GC m 5 g 1048576 n port$i i 0 o 0
+GC m 5 g 1572864 n port$o i 0 o 1
+CC sm 2 sg 1572865 dm 5 dg 1048576
+CS sm 2 sg 1572865 d ""
+CC sm 5 sg 1572864 dm 2 dg 1048577
+CS sm 5 sg 1572864 d ""
+GC m 2 g 1048578 n port$i i 2 o 0
+GC m 2 g 1572866 n port$o i 2 o 1
+GC m 7 g 1048576 n port$i i 0 o 0
+GC m 7 g 1572864 n port$o i 0 o 1
+CC sm 2 sg 1572866 dm 7 dg 1048576
+CS sm 2 sg 1572866 d ""
+CC sm 7 sg 1572864 dm 2 dg 1048578
+CS sm 7 sg 1572864 d ""
+GC m 2 g 1048579 n port$i i 3 o 0
+GC m 2 g 1572867 n port$o i 3 o 1
+GC m 8 g 1048576 n port$i i 0 o 0
+GC m 8 g 1572864 n port$o i 0 o 1
+CC sm 2 sg 1572867 dm 8 dg 1048576
+CS sm 2 sg 1572867 d ""
+CC sm 8 sg 1572864 dm 2 dg 1048579
+CS sm 8 sg 1572864 d ""
+GC m 2 g 1048580 n port$i i 4 o 0
+GC m 2 g 1572868 n port$o i 4 o 1
+GC m 10 g 1048576 n port$i i 0 o 0
+GC m 10 g 1572864 n port$o i 0 o 1
+CC sm 2 sg 1572868 dm 10 dg 1048576
+CS sm 2 sg 1572868 d ""
+CC sm 10 sg 1572864 dm 2 dg 1048580
+CS sm 10 sg 1572864 d ""
+GC m 3 g 1048577 n port$i i 1 o 0
+GC m 3 g 1572865 n port$o i 1 o 1
+GC m 4 g 1048576 n port$i i 0 o 0
+GC m 4 g 1572864 n port$o i 0 o 1
+CC sm 3 sg 1572865 dm 4 dg 1048576
+CS sm 3 sg 1572865 d ""
+CC sm 4 sg 1572864 dm 3 dg 1048577
+CS sm 4 sg 1572864 d ""
+GC m 3 g 1048578 n port$i i 2 o 0
+GC m 3 g 1572866 n port$o i 2 o 1
+GC m 5 g 1048577 n port$i i 1 o 0
+GC m 5 g 1572865 n port$o i 1 o 1
+CC sm 3 sg 1572866 dm 5 dg 1048577
+CS sm 3 sg 1572866 d ""
+CC sm 5 sg 1572865 dm 3 dg 1048578
+CS sm 5 sg 1572865 d ""
+GC m 3 g 1048579 n port$i i 3 o 0
+GC m 3 g 1572867 n port$o i 3 o 1
+GC m 6 g 1048576 n port$i i 0 o 0
+GC m 6 g 1572864 n port$o i 0 o 1
+CC sm 3 sg 1572867 dm 6 dg 1048576
+CS sm 3 sg 1572867 d ""
+CC sm 6 sg 1572864 dm 3 dg 1048579
+CS sm 6 sg 1572864 d ""
+GC m 4 g 1048577 n port$i i 1 o 0
+GC m 4 g 1572865 n port$o i 1 o 1
+GC m 6 g 1048577 n port$i i 1 o 0
+GC m 6 g 1572865 n port$o i 1 o 1
+CC sm 4 sg 1572865 dm 6 dg 1048577
+CS sm 4 sg 1572865 d ""
+CC sm 6 sg 1572865 dm 4 dg 1048577
+CS sm 6 sg 1572865 d ""
+GC m 4 g 1048578 n port$i i 2 o 0
+GC m 4 g 1572866 n port$o i 2 o 1
+GC m 9 g 1048576 n port$i i 0 o 0
+GC m 9 g 1572864 n port$o i 0 o 1
+CC sm 4 sg 1572866 dm 9 dg 1048576
+CS sm 4 sg 1572866 d ""
+CC sm 9 sg 1572864 dm 4 dg 1048578
+CS sm 9 sg 1572864 d ""
+GC m 4 g 1048579 n port$i i 3 o 0
+GC m 4 g 1572867 n port$o i 3 o 1
+GC m 10 g 1048577 n port$i i 1 o 0
+GC m 10 g 1572865 n port$o i 1 o 1
+CC sm 4 sg 1572867 dm 10 dg 1048577
+CS sm 4 sg 1572867 d ""
+CC sm 10 sg 1572865 dm 4 dg 1048579
+CS sm 10 sg 1572865 d ""
+GC m 5 g 1048578 n port$i i 2 o 0
+GC m 5 g 1572866 n port$o i 2 o 1
+GC m 7 g 1048577 n port$i i 1 o 0
+GC m 7 g 1572865 n port$o i 1 o 1
+CC sm 5 sg 1572866 dm 7 dg 1048577
+CS sm 5 sg 1572866 d ""
+CC sm 7 sg 1572865 dm 5 dg 1048578
+CS sm 7 sg 1572865 d ""
+GC m 5 g 1048579 n port$i i 3 o 0
+GC m 5 g 1572867 n port$o i 3 o 1
+GC m 9 g 1048577 n port$i i 1 o 0
+GC m 9 g 1572865 n port$o i 1 o 1
+CC sm 5 sg 1572867 dm 9 dg 1048577
+CS sm 5 sg 1572867 d ""
+CC sm 9 sg 1572865 dm 5 dg 1048579
+CS sm 9 sg 1572865 d ""
+GC m 5 g 1048580 n port$i i 4 o 0
+GC m 5 g 1572868 n port$o i 4 o 1
+GC m 11 g 1048576 n port$i i 0 o 0
+GC m 11 g 1572864 n port$o i 0 o 1
+CC sm 5 sg 1572868 dm 11 dg 1048576
+CS sm 5 sg 1572868 d ""
+CC sm 11 sg 1572864 dm 5 dg 1048580
+CS sm 11 sg 1572864 d ""
+GC m 6 g 1048578 n port$i i 2 o 0
+GC m 6 g 1572866 n port$o i 2 o 1
+GC m 8 g 1048577 n port$i i 1 o 0
+GC m 8 g 1572865 n port$o i 1 o 1
+CC sm 6 sg 1572866 dm 8 dg 1048577
+CS sm 6 sg 1572866 d ""
+CC sm 8 sg 1572865 dm 6 dg 1048578
+CS sm 8 sg 1572865 d ""
+GC m 6 g 1048579 n port$i i 3 o 0
+GC m 6 g 1572867 n port$o i 3 o 1
+GC m 9 g 1048578 n port$i i 2 o 0
+GC m 9 g 1572866 n port$o i 2 o 1
+CC sm 6 sg 1572867 dm 9 dg 1048578
+CS sm 6 sg 1572867 d ""
+CC sm 9 sg 1572866 dm 6 dg 1048579
+CS sm 9 sg 1572866 d ""
+GC m 6 g 1048580 n port$i i 4 o 0
+GC m 6 g 1572868 n port$o i 4 o 1
+GC m 11 g 1048577 n port$i i 1 o 0
+GC m 11 g 1572865 n port$o i 1 o 1
+CC sm 6 sg 1572868 dm 11 dg 1048577
+CS sm 6 sg 1572868 d ""
+CC sm 11 sg 1572865 dm 6 dg 1048580
+CS sm 11 sg 1572865 d ""
+GC m 7 g 1048578 n port$i i 2 o 0
+GC m 7 g 1572866 n port$o i 2 o 1
+GC m 8 g 1048578 n port$i i 2 o 0
+GC m 8 g 1572866 n port$o i 2 o 1
+CC sm 7 sg 1572866 dm 8 dg 1048578
+CS sm 7 sg 1572866 d ""
+CC sm 8 sg 1572866 dm 7 dg 1048578
+CS sm 8 sg 1572866 d ""
+GC m 7 g 1048579 n port$i i 3 o 0
+GC m 7 g 1572867 n port$o i 3 o 1
+GC m 10 g 1048578 n port$i i 2 o 0
+GC m 10 g 1572866 n port$o i 2 o 1
+CC sm 7 sg 1572867 dm 10 dg 1048578
+CS sm 7 sg 1572867 d ""
+CC sm 10 sg 1572866 dm 7 dg 1048579
+CS sm 10 sg 1572866 d ""
+GC m 8 g 1048579 n port$i i 3 o 0
+GC m 8 g 1572867 n port$o i 3 o 1
+GC m 11 g 1048578 n port$i i 2 o 0
+GC m 11 g 1572866 n port$o i 2 o 1
+CC sm 8 sg 1572867 dm 11 dg 1048578
+CS sm 8 sg 1572867 d ""
+CC sm 11 sg 1572866 dm 8 dg 1048579
+CS sm 11 sg 1572866 d ""
+MB sm 1 tm 2 m initialize(0)
+ME
+MB sm 1 tm 3 m initialize(0)
+- INFO (Flooding)Mesh.node[1]:Node 1 is the initiator
+CM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n flooding k 10 pe -1
+CM id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n timer k 11 pe -1
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n timer k 11 pe 0
+ES t 5
+ME
+MB sm 1 tm 4 m initialize(0)
+ME
+MB sm 1 tm 5 m initialize(0)
+ME
+MB sm 1 tm 6 m initialize(0)
+ME
+MB sm 1 tm 7 m initialize(0)
+ME
+MB sm 1 tm 8 m initialize(0)
+ME
+MB sm 1 tm 9 m initialize(0)
+ME
+MB sm 1 tm 10 m initialize(0)
+ME
+MB sm 1 tm 11 m initialize(0)
+ME
+
+E # 1 t 5 m 3 ce 0 msg 1
+CL id 0 tid 0 eid 0 etid 0 c FloodingMessage n flooding k 10 pe 0 cid 2
+BS id 2 tid 0 eid 2 etid 0 c FloodingMessage n flooding k 10 pe 1
+SH sm 3 sg 1572864 pd 0.5
+ES t 6.5
+CL id 2 tid 0 eid 2 etid 0 c FloodingMessage n flooding k 10 pe 1 cid 3
+CL id 0 tid 0 eid 0 etid 0 c FloodingMessage n flooding k 10 pe 1 cid 3
+BS id 3 tid 0 eid 3 etid 0 c FloodingMessage n flooding k 10 pe 1
+SH sm 3 sg 1572865 pd 0.5
+ES t 6.5
+CL id 3 tid 0 eid 3 etid 0 c FloodingMessage n flooding k 10 pe 1 cid 4
+CL id 0 tid 0 eid 0 etid 0 c FloodingMessage n flooding k 10 pe 1 cid 4
+BS id 4 tid 0 eid 4 etid 0 c FloodingMessage n flooding k 10 pe 1
+SH sm 3 sg 1572866 pd 0.5
+ES t 6.5
+CL id 4 tid 0 eid 4 etid 0 c FloodingMessage n flooding k 10 pe 1 cid 5
+BS id 0 tid 0 eid 0 etid 0 c FloodingMessage n flooding k 10 pe 1
+SH sm 3 sg 1572867 pd 0.5
+ES t 6.5
+CL id 0 tid 0 eid 0 etid 0 c FloodingMessage n flooding k 10 pe 1 cid 5
+- INFO:Node 1 is 3
+DM id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n timer k 11 pe 1
+MS id 3 d i=device/laptop,green;is=n
+
+E # 2 t 6.5 m 2 ce 1 msg 2
+CL id 2 tid 0 eid 2 etid 0 c FloodingMessage n flooding k 10 pe 2 cid 5
+BS id 5 tid 0 eid 5 etid 0 c FloodingMessage n flooding k 10 pe 2
+SH sm 2 sg 1572865 pd 0.5
+ES t 7
+CL id 5 tid 0 eid 5 etid 0 c FloodingMessage n flooding k 10 pe 2 cid 6
+CL id 2 tid 0 eid 2 etid 0 c FloodingMessage n flooding k 10 pe 2 cid 6
+BS id 6 tid 0 eid 6 etid 0 c FloodingMessage n flooding k 10 pe 2
+SH sm 2 sg 1572866 pd 0.5
+ES t 7
+CL id 6 tid 0 eid 6 etid 0 c FloodingMessage n flooding k 10 pe 2 cid 7
+CL id 2 tid 0 eid 2 etid 0 c FloodingMessage n flooding k 10 pe 2 cid 7
+BS id 7 tid 0 eid 7 etid 0 c FloodingMessage n flooding k 10 pe 2
+SH sm 2 sg 1572867 pd 0.5
+ES t 7
+CL id 7 tid 0 eid 7 etid 0 c FloodingMessage n flooding k 10 pe 2 cid 8
+CL id 2 tid 0 eid 2 etid 0 c FloodingMessage n flooding k 10 pe 2 cid 8
+BS id 8 tid 0 eid 8 etid 0 c FloodingMessage n flooding k 10 pe 2
+SH sm 2 sg 1572868 pd 0.5
+ES t 7
+CL id 8 tid 0 eid 8 etid 0 c FloodingMessage n flooding k 10 pe 2 cid 9
+- INFO:Node 0 is 3
+BU id 2 txt "I'm DONE"
+DM id 2 tid 0 eid 2 etid 0 c omnetpp::cMessage n flooding k 10 pe 2
+
+E # 3 t 6.5 m 4 ce 1 msg 3
+MS id 2 d i=device/laptop,green;is=n
+CL id 3 tid 0 eid 3 etid 0 c FloodingMessage n flooding k 10 pe 3 cid 9
+BS id 9 tid 0 eid 9 etid 0 c FloodingMessage n flooding k 10 pe 3
+SH sm 4 sg 1572865 pd 0.5
+ES t 7
+CL id 9 tid 0 eid 9 etid 0 c FloodingMessage n flooding k 10 pe 3 cid 10
+CL id 3 tid 0 eid 3 etid 0 c FloodingMessage n flooding k 10 pe 3 cid 10
+BS id 10 tid 0 eid 10 etid 0 c FloodingMessage n flooding k 10 pe 3
+SH sm 4 sg 1572866 pd 0.5
+ES t 7
+CL id 10 tid 0 eid 10 etid 0 c FloodingMessage n flooding k 10 pe 3 cid 11
+CL id 3 tid 0 eid 3 etid 0 c FloodingMessage n flooding k 10 pe 3 cid 11
+BS id 11 tid 0 eid 11 etid 0 c FloodingMessage n flooding k 10 pe 3
+SH sm 4 sg 1572867 pd 0.5
+ES t 7
+CL id 11 tid 0 eid 11 etid 0 c FloodingMessage n flooding k 10 pe 3 cid 12
+- INFO:Node 2 is 3
+BU id 4 txt "I'm DONE"
+DM id 3 tid 0 eid 3 etid 0 c omnetpp::cMessage n flooding k 10 pe 3
+
+E # 4 t 6.5 m 5 ce 1 msg 4
+MS id 4 d i=device/laptop,green;is=n
+CL id 4 tid 0 eid 4 etid 0 c FloodingMessage n flooding k 10 pe 4 cid 12
+BS id 12 tid 0 eid 12 etid 0 c FloodingMessage n flooding k 10 pe 4
+SH sm 5 sg 1572864 pd 0.5
+ES t 7
+CL id 12 tid 0 eid 12 etid 0 c FloodingMessage n flooding k 10 pe 4 cid 13
+CL id 4 tid 0 eid 4 etid 0 c FloodingMessage n flooding k 10 pe 4 cid 13
+BS id 13 tid 0 eid 13 etid 0 c FloodingMessage n flooding k 10 pe 4
+SH sm 5 sg 1572866 pd 0.5
+ES t 7
+CL id 13 tid 0 eid 13 etid 0 c FloodingMessage n flooding k 10 pe 4 cid 14
+CL id 4 tid 0 eid 4 etid 0 c FloodingMessage n flooding k 10 pe 4 cid 14
+BS id 14 tid 0 eid 14 etid 0 c FloodingMessage n flooding k 10 pe 4
+SH sm 5 sg 1572867 pd 0.5
+ES t 7
+CL id 14 tid 0 eid 14 etid 0 c FloodingMessage n flooding k 10 pe 4 cid 15
+CL id 4 tid 0 eid 4 etid 0 c FloodingMessage n flooding k 10 pe 4 cid 15
+BS id 15 tid 0 eid 15 etid 0 c FloodingMessage n flooding k 10 pe 4
+SH sm 5 sg 1572868 pd 0.5
+ES t 7
+CL id 15 tid 0 eid 15 etid 0 c FloodingMessage n flooding k 10 pe 4 cid 16
+- INFO:Node 3 is 3
+BU id 5 txt "I'm DONE"
+DM id 4 tid 0 eid 4 etid 0 c omnetpp::cMessage n flooding k 10 pe 4
+
+E # 5 t 6.5 m 6 ce 1 msg 0
+MS id 5 d i=device/laptop,green;is=n
+CL id 0 tid 0 eid 0 etid 0 c FloodingMessage n flooding k 10 pe 5 cid 16
+BS id 16 tid 0 eid 16 etid 0 c FloodingMessage n flooding k 10 pe 5
+SH sm 6 sg 1572865 pd 0.5
+ES t 7
+CL id 16 tid 0 eid 16 etid 0 c FloodingMessage n flooding k 10 pe 5 cid 17
+CL id 0 tid 0 eid 0 etid 0 c FloodingMessage n flooding k 10 pe 5 cid 17
+BS id 17 tid 0 eid 17 etid 0 c FloodingMessage n flooding k 10 pe 5
+SH sm 6 sg 1572866 pd 0.5
+ES t 7
+CL id 17 tid 0 eid 17 etid 0 c FloodingMessage n flooding k 10 pe 5 cid 18
+CL id 0 tid 0 eid 0 etid 0 c FloodingMessage n flooding k 10 pe 5 cid 18
+BS id 18 tid 0 eid 18 etid 0 c FloodingMessage n flooding k 10 pe 5
+SH sm 6 sg 1572867 pd 0.5
+ES t 7
+CL id 18 tid 0 eid 18 etid 0 c FloodingMessage n flooding k 10 pe 5 cid 19
+CL id 0 tid 0 eid 0 etid 0 c FloodingMessage n flooding k 10 pe 5 cid 19
+BS id 19 tid 0 eid 19 etid 0 c FloodingMessage n flooding k 10 pe 5
+SH sm 6 sg 1572868 pd 0.5
+ES t 7
+CL id 19 tid 0 eid 19 etid 0 c FloodingMessage n flooding k 10 pe 5 cid 20
+- INFO:Node 4 is 3
+BU id 6 txt "I'm DONE"
+DM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n flooding k 10 pe 5
+MS id 6 d i=device/laptop,green;is=n
+
+E # 6 t 7 m 5 ce 2 msg 5
+DM id 5 tid 0 eid 5 etid 0 c omnetpp::cMessage n flooding k 10 pe 6
+
+E # 7 t 7 m 7 ce 2 msg 6
+CL id 6 tid 0 eid 6 etid 0 c FloodingMessage n flooding k 10 pe 7 cid 20
+BS id 20 tid 0 eid 20 etid 0 c FloodingMessage n flooding k 10 pe 7
+SH sm 7 sg 1572865 pd 0.5
+ES t 7.5
+CL id 20 tid 0 eid 20 etid 0 c FloodingMessage n flooding k 10 pe 7 cid 21
+CL id 6 tid 0 eid 6 etid 0 c FloodingMessage n flooding k 10 pe 7 cid 21
+BS id 21 tid 0 eid 21 etid 0 c FloodingMessage n flooding k 10 pe 7
+SH sm 7 sg 1572866 pd 0.5
+ES t 7.5
+CL id 21 tid 0 eid 21 etid 0 c FloodingMessage n flooding k 10 pe 7 cid 22
+CL id 6 tid 0 eid 6 etid 0 c FloodingMessage n flooding k 10 pe 7 cid 22
+BS id 22 tid 0 eid 22 etid 0 c FloodingMessage n flooding k 10 pe 7
+SH sm 7 sg 1572867 pd 0.5
+ES t 7.5
+CL id 22 tid 0 eid 22 etid 0 c FloodingMessage n flooding k 10 pe 7 cid 23
+- INFO:Node 5 is 3
+BU id 7 txt "I'm DONE"
+DM id 6 tid 0 eid 6 etid 0 c omnetpp::cMessage n flooding k 10 pe 7
+
+E # 8 t 7 m 8 ce 2 msg 7
+MS id 7 d i=device/laptop,green;is=n
+CL id 7 tid 0 eid 7 etid 0 c FloodingMessage n flooding k 10 pe 8 cid 23
+BS id 23 tid 0 eid 23 etid 0 c FloodingMessage n flooding k 10 pe 8
+SH sm 8 sg 1572865 pd 0.5
+ES t 7.5
+CL id 23 tid 0 eid 23 etid 0 c FloodingMessage n flooding k 10 pe 8 cid 24
+CL id 7 tid 0 eid 7 etid 0 c FloodingMessage n flooding k 10 pe 8 cid 24
+BS id 24 tid 0 eid 24 etid 0 c FloodingMessage n flooding k 10 pe 8
+SH sm 8 sg 1572866 pd 0.5
+ES t 7.5
+CL id 24 tid 0 eid 24 etid 0 c FloodingMessage n flooding k 10 pe 8 cid 25
+CL id 7 tid 0 eid 7 etid 0 c FloodingMessage n flooding k 10 pe 8 cid 25
+BS id 25 tid 0 eid 25 etid 0 c FloodingMessage n flooding k 10 pe 8
+SH sm 8 sg 1572867 pd 0.5
+ES t 7.5
+CL id 25 tid 0 eid 25 etid 0 c FloodingMessage n flooding k 10 pe 8 cid 26
+- INFO:Node 6 is 3
+BU id 8 txt "I'm DONE"
+DM id 7 tid 0 eid 7 etid 0 c omnetpp::cMessage n flooding k 10 pe 8
+
+E # 9 t 7 m 10 ce 2 msg 8
+MS id 8 d i=device/laptop,green;is=n
+CL id 8 tid 0 eid 8 etid 0 c FloodingMessage n flooding k 10 pe 9 cid 26
+BS id 26 tid 0 eid 26 etid 0 c FloodingMessage n flooding k 10 pe 9
+SH sm 10 sg 1572865 pd 0.5
+ES t 7.5
+CL id 26 tid 0 eid 26 etid 0 c FloodingMessage n flooding k 10 pe 9 cid 27
+CL id 8 tid 0 eid 8 etid 0 c FloodingMessage n flooding k 10 pe 9 cid 27
+BS id 27 tid 0 eid 27 etid 0 c FloodingMessage n flooding k 10 pe 9
+SH sm 10 sg 1572866 pd 0.5
+ES t 7.5
+CL id 27 tid 0 eid 27 etid 0 c FloodingMessage n flooding k 10 pe 9 cid 28
+- INFO:Node 8 is 3
+BU id 10 txt "I'm DONE"
+DM id 8 tid 0 eid 8 etid 0 c omnetpp::cMessage n flooding k 10 pe 9
+
+E # 10 t 7 m 6 ce 3 msg 9
+MS id 10 d i=device/laptop,green;is=n
+DM id 9 tid 0 eid 9 etid 0 c omnetpp::cMessage n flooding k 10 pe 10
+
+E # 11 t 7 m 9 ce 3 msg 10
+CL id 10 tid 0 eid 10 etid 0 c FloodingMessage n flooding k 10 pe 11 cid 28
+BS id 28 tid 0 eid 28 etid 0 c FloodingMessage n flooding k 10 pe 11
+SH sm 9 sg 1572865 pd 0.5
+ES t 7.5
+CL id 28 tid 0 eid 28 etid 0 c FloodingMessage n flooding k 10 pe 11 cid 29
+CL id 10 tid 0 eid 10 etid 0 c FloodingMessage n flooding k 10 pe 11 cid 29
+BS id 29 tid 0 eid 29 etid 0 c FloodingMessage n flooding k 10 pe 11
+SH sm 9 sg 1572866 pd 0.5
+ES t 7.5
+CL id 29 tid 0 eid 29 etid 0 c FloodingMessage n flooding k 10 pe 11 cid 30
+- INFO:Node 7 is 3
+BU id 9 txt "I'm DONE"
+DM id 10 tid 0 eid 10 etid 0 c omnetpp::cMessage n flooding k 10 pe 11
+
+E # 12 t 7 m 10 ce 3 msg 11
+MS id 9 d i=device/laptop,green;is=n
+DM id 11 tid 0 eid 11 etid 0 c omnetpp::cMessage n flooding k 10 pe 12
+
+E # 13 t 7 m 2 ce 4 msg 12
+DM id 12 tid 0 eid 12 etid 0 c omnetpp::cMessage n flooding k 10 pe 13
+
+E # 14 t 7 m 7 ce 4 msg 13
+DM id 13 tid 0 eid 13 etid 0 c omnetpp::cMessage n flooding k 10 pe 14
+
+E # 15 t 7 m 9 ce 4 msg 14
+DM id 14 tid 0 eid 14 etid 0 c omnetpp::cMessage n flooding k 10 pe 15
+
+E # 16 t 7 m 11 ce 4 msg 15
+CL id 15 tid 0 eid 15 etid 0 c FloodingMessage n flooding k 10 pe 16 cid 30
+BS id 30 tid 0 eid 30 etid 0 c FloodingMessage n flooding k 10 pe 16
+SH sm 11 sg 1572865 pd 0.5
+ES t 7.5
+CL id 30 tid 0 eid 30 etid 0 c FloodingMessage n flooding k 10 pe 16 cid 31
+CL id 15 tid 0 eid 15 etid 0 c FloodingMessage n flooding k 10 pe 16 cid 31
+BS id 31 tid 0 eid 31 etid 0 c FloodingMessage n flooding k 10 pe 16
+SH sm 11 sg 1572866 pd 0.5
+ES t 7.5
+CL id 31 tid 0 eid 31 etid 0 c FloodingMessage n flooding k 10 pe 16 cid 32
+- INFO:Node 9 is 3
+BU id 11 txt "I'm DONE"
+DM id 15 tid 0 eid 15 etid 0 c omnetpp::cMessage n flooding k 10 pe 16
+
+E # 17 t 7 m 4 ce 5 msg 16
+MS id 11 d i=device/laptop,green;is=n
+DM id 16 tid 0 eid 16 etid 0 c omnetpp::cMessage n flooding k 10 pe 17
+
+E # 18 t 7 m 8 ce 5 msg 17
+DM id 17 tid 0 eid 17 etid 0 c omnetpp::cMessage n flooding k 10 pe 18
+
+E # 19 t 7 m 9 ce 5 msg 18
+DM id 18 tid 0 eid 18 etid 0 c omnetpp::cMessage n flooding k 10 pe 19
+
+E # 20 t 7 m 11 ce 5 msg 19
+DM id 19 tid 0 eid 19 etid 0 c omnetpp::cMessage n flooding k 10 pe 20
+
+E # 21 t 7.5 m 5 ce 7 msg 20
+DM id 20 tid 0 eid 20 etid 0 c omnetpp::cMessage n flooding k 10 pe 21
+
+E # 22 t 7.5 m 8 ce 7 msg 21
+DM id 21 tid 0 eid 21 etid 0 c omnetpp::cMessage n flooding k 10 pe 22
+
+E # 23 t 7.5 m 10 ce 7 msg 22
+DM id 22 tid 0 eid 22 etid 0 c omnetpp::cMessage n flooding k 10 pe 23
+
+E # 24 t 7.5 m 6 ce 8 msg 23
+DM id 23 tid 0 eid 23 etid 0 c omnetpp::cMessage n flooding k 10 pe 24
+
+E # 25 t 7.5 m 7 ce 8 msg 24
+DM id 24 tid 0 eid 24 etid 0 c omnetpp::cMessage n flooding k 10 pe 25
+
+E # 26 t 7.5 m 11 ce 8 msg 25
+DM id 25 tid 0 eid 25 etid 0 c omnetpp::cMessage n flooding k 10 pe 26
+
+E # 27 t 7.5 m 4 ce 9 msg 26
+DM id 26 tid 0 eid 26 etid 0 c omnetpp::cMessage n flooding k 10 pe 27
+
+E # 28 t 7.5 m 7 ce 9 msg 27
+DM id 27 tid 0 eid 27 etid 0 c omnetpp::cMessage n flooding k 10 pe 28
+
+E # 29 t 7.5 m 5 ce 11 msg 28
+DM id 28 tid 0 eid 28 etid 0 c omnetpp::cMessage n flooding k 10 pe 29
+
+E # 30 t 7.5 m 6 ce 11 msg 29
+DM id 29 tid 0 eid 29 etid 0 c omnetpp::cMessage n flooding k 10 pe 30
+
+E # 31 t 7.5 m 6 ce 16 msg 30
+DM id 30 tid 0 eid 30 etid 0 c omnetpp::cMessage n flooding k 10 pe 31
+
+E # 32 t 7.5 m 8 ce 16 msg 31
+DM id 31 tid 0 eid 31 etid 0 c omnetpp::cMessage n flooding k 10 pe 32
+SE e 0 c 13 m "No more events, simulation completed -- at t=7.5s, event #32"
