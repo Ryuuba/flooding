@@ -19,7 +19,7 @@ package flooding.simulations;
 
 import flooding.Flooding;
 
-import ned.DelayChannel;
+import flooding.simulations.Link;
 
 //
 // A generated network with ring topology.
@@ -35,14 +35,14 @@ network Ring
                 port[2];
         }
     connections:
-        node[0].port[0] <--> DelayChannel <--> node[1].port[1];
-        node[1].port[0] <--> DelayChannel <--> node[2].port[1];
-        node[2].port[0] <--> DelayChannel <--> node[3].port[1];
-        node[3].port[0] <--> DelayChannel <--> node[4].port[1];
-        node[4].port[0] <--> DelayChannel <--> node[5].port[1];
-        node[5].port[0] <--> DelayChannel <--> node[6].port[1];
-        node[6].port[0] <--> DelayChannel <--> node[7].port[1];
-        node[7].port[0] <--> DelayChannel <--> node[8].port[1];
-        node[8].port[0] <--> DelayChannel <--> node[9].port[1];
-        node[9].port[0] <--> DelayChannel <--> node[0].port[1];
+        node[0].port[0] <--> Link <--> node[1].port[1];
+        node[1].port[0] <--> Link <--> node[2].port[1];
+        node[2].port[0] <--> Link <--> node[3].port[1];
+        node[3].port[0] <--> Link <--> node[4].port[1];
+        node[4].port[0] <--> Link <--> node[5].port[1];
+        node[5].port[0] <--> Link <--> node[6].port[1];
+        node[6].port[0] <--> Link <--> node[7].port[1];
+        node[7].port[0] <--> Link <--> node[8].port[1];
+        node[8].port[0] <--> Link <--> node[9].port[1];
+        node[9].port[0] <--> Link <--> node[0].port[1];
 }

@@ -16,11 +16,7 @@
 package flooding.simulations;
 import flooding.Flooding;
 
-channel Link extends ned.DatarateChannel {
-    parameters:
-        int cost = default(3);
-        delay = 500ms;
-}
+import flooding.simulations.Link;
 
 //
 // Generated network with random topology (10 nodes, 20 edges, seed=0).
