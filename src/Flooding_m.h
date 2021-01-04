@@ -19,7 +19,7 @@
 
 
 /**
- * Class generated from <tt>Flooding.msg:1</tt> by nedtool.
+ * Class generated from <tt>Flooding.msg:4</tt> by nedtool.
  * <pre>
  * message FloodingMessage
  * {

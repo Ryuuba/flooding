@@ -1,5 +1,5 @@
 [General]
-last-configname=Ring
+last-configname=Mesh
 last-runnumber=0
 
 [RunModeProfiles]
@@ -12,4 +12,4 @@ run-max-animation-speed=nan
 run-max-playback-speed=100
 run-min-animation-speed=nan
 run-min-playback-speed=0.01
-run-playback-speed=1.8197008586099834
+run-playback-speed=0.3981071705534972
