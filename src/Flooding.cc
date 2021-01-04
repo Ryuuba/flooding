@@ -9,7 +9,9 @@ Flooding::Flooding()
 { }
 
 Flooding::~Flooding()
-{ }
+{
+  cancelAndDelete(timer);
+}
 
 void Flooding::initialize()
 {
@@ -34,12 +36,14 @@ void Flooding::handleMessage(omnetpp::cMessage* recv_msg)
 {
   if (status == Status::INITIATOR)
   {
-    int n = gateSize("port$o");
-    for (int i = 0; i < n - 1; i++)
-      sendDelayed(msg->dup(), 1.0, "port$o", i);
-    sendDelayed(msg, 1.0, "port$o", n - 1);
-    status = Status::DONE;
-    EV_INFO << "Node " << getIndex() << " is " << status << "\n";
+    if (recv_msg->getKind() == MsgKind::TIMER) {
+      int n = gateSize("port$o");
+      for (int i = 0; i < n - 1; i++)
+        send(msg->dup(), "port$o", i);
+      send(msg, "port$o", n - 1);
+      status = Status::DONE;
+      EV_INFO << "Node " << getIndex() << " is " << status << "\n";
+    }
   }
   else if (status == Status::IDLE)   // A2
   {
@@ -47,8 +51,7 @@ void Flooding::handleMessage(omnetpp::cMessage* recv_msg)
     {
       auto floodingMessage = dynamic_cast<FloodingMessage*>(recv_msg);
       data = floodingMessage->getData();
-      auto arrivalGate = floodingMessage->getArrivalGate();
-      int gateIndex = arrivalGate->getIndex();
+      int gateIndex = floodingMessage->getArrivalGate()->getIndex();
       int n = gateSize("port$o");
       for (int i = 0; i < n; i++)
         if (i != gateIndex)
@@ -56,11 +59,9 @@ void Flooding::handleMessage(omnetpp::cMessage* recv_msg)
       status = Status::DONE;
       EV_INFO << "Node " << getIndex() << " is " << status << "\n";
       bubble("I'm DONE");
+      delete recv_msg;
     }
-    else
-      error("Invalid event\n");
   }
-  delete recv_msg;
 }
 
 void Flooding::refreshDisplay() const

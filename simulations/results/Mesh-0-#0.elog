@@ -1,5 +1,5 @@
 E # 0 t 0 m 1 ce -1 msg -1
-SB v 1286 rid Mesh-0-20201226-01:11:01-952 b 1000
+SB v 1286 rid Mesh-0-20210104-14:24:51-6630 b 1000
 KF p -1 c "" s ""
 MC id 1 c omnetpp::cModule t flooding.simulations.Mesh n Mesh cm 1
 MS id 1 d bgb=300,300
@@ -187,9 +187,9 @@ MB sm 1 tm 2 m initialize(0)
 ME
 MB sm 1 tm 3 m initialize(0)
 - INFO (Flooding)Mesh.node[1]:Node 1 is the initiator
-CM id 96 tid 96 eid 96 etid 96 c omnetpp::cMessage n flooding k 10 pe -1
-CM id 97 tid 97 eid 97 etid 97 c omnetpp::cMessage n timer k 11 pe -1
-BS id 97 tid 97 eid 97 etid 97 c omnetpp::cMessage n timer k 11 pe 0
+CM id 32 tid 32 eid 32 etid 32 c omnetpp::cMessage n flooding k 10 pe -1
+CM id 33 tid 33 eid 33 etid 33 c omnetpp::cMessage n timer k 11 pe -1
+BS id 33 tid 33 eid 33 etid 33 c omnetpp::cMessage n timer k 11 pe 0
 ES t 5
 ME
 MB sm 1 tm 4 m initialize(0)
@@ -209,282 +209,249 @@ ME
 MB sm 1 tm 11 m initialize(0)
 ME
 
-E # 1 t 5 m 3 ce 0 msg 97
-CL id 96 tid 96 eid 96 etid 96 c FloodingMessage n flooding k 10 pe 0 cid 98
-BS id 98 tid 96 eid 98 etid 96 c FloodingMessage n flooding k 10 pe 1
-SH sm 3 sg 1572864 pd 0.899
-ES t 6.899
-CL id 98 tid 96 eid 98 etid 96 c FloodingMessage n flooding k 10 pe 1 cid 99
-CL id 96 tid 96 eid 96 etid 96 c FloodingMessage n flooding k 10 pe 1 cid 99
-BS id 99 tid 96 eid 99 etid 96 c FloodingMessage n flooding k 10 pe 1
-SH sm 3 sg 1572865 pd 1.038
-ES t 7.038
-CL id 99 tid 96 eid 99 etid 96 c FloodingMessage n flooding k 10 pe 1 cid 100
-CL id 96 tid 96 eid 96 etid 96 c FloodingMessage n flooding k 10 pe 1 cid 100
-BS id 100 tid 96 eid 100 etid 96 c FloodingMessage n flooding k 10 pe 1
-SH sm 3 sg 1572866 pd 0.576
-ES t 6.576
-CL id 100 tid 96 eid 100 etid 96 c FloodingMessage n flooding k 10 pe 1 cid 101
-BS id 96 tid 96 eid 96 etid 96 c FloodingMessage n flooding k 10 pe 1
-SH sm 3 sg 1572867 pd 2.224
-ES t 8.224
-CL id 96 tid 96 eid 96 etid 96 c FloodingMessage n flooding k 10 pe 1 cid 101
+E # 1 t 5 m 3 ce 0 msg 33
+CL id 32 tid 32 eid 32 etid 32 c FloodingMessage n flooding k 10 pe 0 cid 34
+BS id 34 tid 32 eid 34 etid 32 c FloodingMessage n flooding k 10 pe 1
+SH sm 3 sg 1572864 pd 0.898560388484
+ES t 5.898560388484
+CL id 34 tid 32 eid 34 etid 32 c FloodingMessage n flooding k 10 pe 1 cid 35
+CL id 32 tid 32 eid 32 etid 32 c FloodingMessage n flooding k 10 pe 1 cid 35
+BS id 35 tid 32 eid 35 etid 32 c FloodingMessage n flooding k 10 pe 1
+SH sm 3 sg 1572865 pd 1.038159300664
+ES t 6.038159300664
+CL id 35 tid 32 eid 35 etid 32 c FloodingMessage n flooding k 10 pe 1 cid 36
+CL id 32 tid 32 eid 32 etid 32 c FloodingMessage n flooding k 10 pe 1 cid 36
+BS id 36 tid 32 eid 36 etid 32 c FloodingMessage n flooding k 10 pe 1
+SH sm 3 sg 1572866 pd 0.575519196883
+ES t 5.575519196883
+CL id 36 tid 32 eid 36 etid 32 c FloodingMessage n flooding k 10 pe 1 cid 37
+BS id 32 tid 32 eid 32 etid 32 c FloodingMessage n flooding k 10 pe 1
+SH sm 3 sg 1572867 pd 2.223524422036
+ES t 7.223524422036
+CL id 32 tid 32 eid 32 etid 32 c FloodingMessage n flooding k 10 pe 1 cid 37
 - INFO:Node 1 is 3
-DM id 97 tid 97 eid 97 etid 97 c omnetpp::cMessage n timer k 11 pe 1
-MS id 3 d i=device/laptop,green;is=n
 
-E # 2 t 6.576 m 5 ce 1 msg 100
-CL id 100 tid 96 eid 100 etid 96 c FloodingMessage n flooding k 10 pe 2 cid 101
-BS id 101 tid 96 eid 101 etid 96 c FloodingMessage n flooding k 10 pe 2
-SH sm 5 sg 1572864 pd 1.86
-ES t 8.436
-CL id 101 tid 96 eid 101 etid 96 c FloodingMessage n flooding k 10 pe 2 cid 102
-CL id 100 tid 96 eid 100 etid 96 c FloodingMessage n flooding k 10 pe 2 cid 102
-BS id 102 tid 96 eid 102 etid 96 c FloodingMessage n flooding k 10 pe 2
-SH sm 5 sg 1572866 pd 0.753
-ES t 7.329
-CL id 102 tid 96 eid 102 etid 96 c FloodingMessage n flooding k 10 pe 2 cid 103
-CL id 100 tid 96 eid 100 etid 96 c FloodingMessage n flooding k 10 pe 2 cid 103
-BS id 103 tid 96 eid 103 etid 96 c FloodingMessage n flooding k 10 pe 2
-SH sm 5 sg 1572867 pd 0.839
-ES t 7.415
-CL id 103 tid 96 eid 103 etid 96 c FloodingMessage n flooding k 10 pe 2 cid 104
-CL id 100 tid 96 eid 100 etid 96 c FloodingMessage n flooding k 10 pe 2 cid 104
-BS id 104 tid 96 eid 104 etid 96 c FloodingMessage n flooding k 10 pe 2
-SH sm 5 sg 1572868 pd 2.598
-ES t 9.174
-CL id 104 tid 96 eid 104 etid 96 c FloodingMessage n flooding k 10 pe 2 cid 105
+E # 2 t 5.575519196883 m 5 ce 1 msg 36
+CL id 36 tid 32 eid 36 etid 32 c FloodingMessage n flooding k 10 pe 2 cid 37
+BS id 37 tid 32 eid 37 etid 32 c FloodingMessage n flooding k 10 pe 2
+SH sm 5 sg 1572864 pd 1.859604212075
+ES t 7.435123408958
+CL id 37 tid 32 eid 37 etid 32 c FloodingMessage n flooding k 10 pe 2 cid 38
+CL id 36 tid 32 eid 36 etid 32 c FloodingMessage n flooding k 10 pe 2 cid 38
+BS id 38 tid 32 eid 38 etid 32 c FloodingMessage n flooding k 10 pe 2
+SH sm 5 sg 1572866 pd 0.752674113313
+ES t 6.328193310196
+CL id 38 tid 32 eid 38 etid 32 c FloodingMessage n flooding k 10 pe 2 cid 39
+CL id 36 tid 32 eid 36 etid 32 c FloodingMessage n flooding k 10 pe 2 cid 39
+BS id 39 tid 32 eid 39 etid 32 c FloodingMessage n flooding k 10 pe 2
+SH sm 5 sg 1572867 pd 0.8394328529
+ES t 6.414952049783
+CL id 39 tid 32 eid 39 etid 32 c FloodingMessage n flooding k 10 pe 2 cid 40
+CL id 36 tid 32 eid 36 etid 32 c FloodingMessage n flooding k 10 pe 2 cid 40
+BS id 40 tid 32 eid 40 etid 32 c FloodingMessage n flooding k 10 pe 2
+SH sm 5 sg 1572868 pd 2.598254085849
+ES t 8.173773282732
+CL id 40 tid 32 eid 40 etid 32 c FloodingMessage n flooding k 10 pe 2 cid 41
 - INFO:Node 3 is 3
 BU id 5 txt "I'm DONE"
-DM id 100 tid 96 eid 100 etid 96 c omnetpp::cMessage n flooding k 10 pe 2
-MS id 5 d i=device/laptop,green;is=n
+DM id 36 tid 32 eid 36 etid 32 c omnetpp::cMessage n flooding k 10 pe 2
 
-E # 3 t 6.899 m 2 ce 1 msg 98
-CL id 98 tid 96 eid 98 etid 96 c FloodingMessage n flooding k 10 pe 3 cid 105
-BS id 105 tid 96 eid 105 etid 96 c FloodingMessage n flooding k 10 pe 3
-SH sm 2 sg 1572865 pd 1.256
-ES t 8.155
-CL id 105 tid 96 eid 105 etid 96 c FloodingMessage n flooding k 10 pe 3 cid 106
-CL id 98 tid 96 eid 98 etid 96 c FloodingMessage n flooding k 10 pe 3 cid 106
-BS id 106 tid 96 eid 106 etid 96 c FloodingMessage n flooding k 10 pe 3
-SH sm 2 sg 1572866 pd 0.923
-ES t 7.822
-CL id 106 tid 96 eid 106 etid 96 c FloodingMessage n flooding k 10 pe 3 cid 107
-CL id 98 tid 96 eid 98 etid 96 c FloodingMessage n flooding k 10 pe 3 cid 107
-BS id 107 tid 96 eid 107 etid 96 c FloodingMessage n flooding k 10 pe 3
-SH sm 2 sg 1572867 pd 0.787
-ES t 7.686
-CL id 107 tid 96 eid 107 etid 96 c FloodingMessage n flooding k 10 pe 3 cid 108
-CL id 98 tid 96 eid 98 etid 96 c FloodingMessage n flooding k 10 pe 3 cid 108
-BS id 108 tid 96 eid 108 etid 96 c FloodingMessage n flooding k 10 pe 3
-SH sm 2 sg 1572868 pd 0.551
-ES t 7.45
-CL id 108 tid 96 eid 108 etid 96 c FloodingMessage n flooding k 10 pe 3 cid 109
+E # 3 t 5.898560388484 m 2 ce 1 msg 34
+CL id 34 tid 32 eid 34 etid 32 c FloodingMessage n flooding k 10 pe 3 cid 41
+BS id 41 tid 32 eid 41 etid 32 c FloodingMessage n flooding k 10 pe 3
+SH sm 2 sg 1572865 pd 1.255930758047
+ES t 7.154491146531
+CL id 41 tid 32 eid 41 etid 32 c FloodingMessage n flooding k 10 pe 3 cid 42
+CL id 34 tid 32 eid 34 etid 32 c FloodingMessage n flooding k 10 pe 3 cid 42
+BS id 42 tid 32 eid 42 etid 32 c FloodingMessage n flooding k 10 pe 3
+SH sm 2 sg 1572866 pd 0.923223131471
+ES t 6.821783519955
+CL id 42 tid 32 eid 42 etid 32 c FloodingMessage n flooding k 10 pe 3 cid 43
+CL id 34 tid 32 eid 34 etid 32 c FloodingMessage n flooding k 10 pe 3 cid 43
+BS id 43 tid 32 eid 43 etid 32 c FloodingMessage n flooding k 10 pe 3
+SH sm 2 sg 1572867 pd 0.787201139982
+ES t 6.685761528466
+CL id 43 tid 32 eid 43 etid 32 c FloodingMessage n flooding k 10 pe 3 cid 44
+CL id 34 tid 32 eid 34 etid 32 c FloodingMessage n flooding k 10 pe 3 cid 44
+BS id 44 tid 32 eid 44 etid 32 c FloodingMessage n flooding k 10 pe 3
+SH sm 2 sg 1572868 pd 0.55104848667
+ES t 6.449608875154
+CL id 44 tid 32 eid 44 etid 32 c FloodingMessage n flooding k 10 pe 3 cid 45
 - INFO:Node 0 is 3
 BU id 2 txt "I'm DONE"
-DM id 98 tid 96 eid 98 etid 96 c omnetpp::cMessage n flooding k 10 pe 3
-MS id 2 d i=device/laptop,green;is=n
+DM id 34 tid 32 eid 34 etid 32 c omnetpp::cMessage n flooding k 10 pe 3
 
-E # 4 t 7.038 m 4 ce 1 msg 99
-CL id 99 tid 96 eid 99 etid 96 c FloodingMessage n flooding k 10 pe 4 cid 109
-BS id 109 tid 96 eid 109 etid 96 c FloodingMessage n flooding k 10 pe 4
-SH sm 4 sg 1572865 pd 3.315
-ES t 10.353
-CL id 109 tid 96 eid 109 etid 96 c FloodingMessage n flooding k 10 pe 4 cid 110
-CL id 99 tid 96 eid 99 etid 96 c FloodingMessage n flooding k 10 pe 4 cid 110
-BS id 110 tid 96 eid 110 etid 96 c FloodingMessage n flooding k 10 pe 4
-SH sm 4 sg 1572866 pd 0.484
-ES t 7.522
-CL id 110 tid 96 eid 110 etid 96 c FloodingMessage n flooding k 10 pe 4 cid 111
-CL id 99 tid 96 eid 99 etid 96 c FloodingMessage n flooding k 10 pe 4 cid 111
-BS id 111 tid 96 eid 111 etid 96 c FloodingMessage n flooding k 10 pe 4
-SH sm 4 sg 1572867 pd 1.569
-ES t 8.607
-CL id 111 tid 96 eid 111 etid 96 c FloodingMessage n flooding k 10 pe 4 cid 112
+E # 4 t 6.038159300664 m 4 ce 1 msg 35
+CL id 35 tid 32 eid 35 etid 32 c FloodingMessage n flooding k 10 pe 4 cid 45
+BS id 45 tid 32 eid 45 etid 32 c FloodingMessage n flooding k 10 pe 4
+SH sm 4 sg 1572865 pd 3.314912279928
+ES t 9.353071580592
+CL id 45 tid 32 eid 45 etid 32 c FloodingMessage n flooding k 10 pe 4 cid 46
+CL id 35 tid 32 eid 35 etid 32 c FloodingMessage n flooding k 10 pe 4 cid 46
+BS id 46 tid 32 eid 46 etid 32 c FloodingMessage n flooding k 10 pe 4
+SH sm 4 sg 1572866 pd 0.483602104948
+ES t 6.521761405612
+CL id 46 tid 32 eid 46 etid 32 c FloodingMessage n flooding k 10 pe 4 cid 47
+CL id 35 tid 32 eid 35 etid 32 c FloodingMessage n flooding k 10 pe 4 cid 47
+BS id 47 tid 32 eid 47 etid 32 c FloodingMessage n flooding k 10 pe 4
+SH sm 4 sg 1572867 pd 1.568896117623
+ES t 7.607055418287
+CL id 47 tid 32 eid 47 etid 32 c FloodingMessage n flooding k 10 pe 4 cid 48
 - INFO:Node 2 is 3
 BU id 4 txt "I'm DONE"
-DM id 99 tid 96 eid 99 etid 96 c omnetpp::cMessage n flooding k 10 pe 4
-MS id 4 d i=device/laptop,green;is=n
+DM id 35 tid 32 eid 35 etid 32 c omnetpp::cMessage n flooding k 10 pe 4
 
-E # 5 t 7.329 m 7 ce 2 msg 102
-CL id 102 tid 96 eid 102 etid 96 c FloodingMessage n flooding k 10 pe 5 cid 112
-BS id 112 tid 96 eid 112 etid 96 c FloodingMessage n flooding k 10 pe 5
-SH sm 7 sg 1572864 pd 1.952
-ES t 9.281
-CL id 112 tid 96 eid 112 etid 96 c FloodingMessage n flooding k 10 pe 5 cid 113
-CL id 102 tid 96 eid 102 etid 96 c FloodingMessage n flooding k 10 pe 5 cid 113
-BS id 113 tid 96 eid 113 etid 96 c FloodingMessage n flooding k 10 pe 5
-SH sm 7 sg 1572866 pd 1.787
-ES t 9.116
-CL id 113 tid 96 eid 113 etid 96 c FloodingMessage n flooding k 10 pe 5 cid 114
-CL id 102 tid 96 eid 102 etid 96 c FloodingMessage n flooding k 10 pe 5 cid 114
-BS id 114 tid 96 eid 114 etid 96 c FloodingMessage n flooding k 10 pe 5
-SH sm 7 sg 1572867 pd 1.506
-ES t 8.835
-CL id 114 tid 96 eid 114 etid 96 c FloodingMessage n flooding k 10 pe 5 cid 115
+E # 5 t 6.328193310196 m 7 ce 2 msg 38
+CL id 38 tid 32 eid 38 etid 32 c FloodingMessage n flooding k 10 pe 5 cid 48
+BS id 48 tid 32 eid 48 etid 32 c FloodingMessage n flooding k 10 pe 5
+SH sm 7 sg 1572864 pd 1.951545335884
+ES t 8.27973864608
+CL id 48 tid 32 eid 48 etid 32 c FloodingMessage n flooding k 10 pe 5 cid 49
+CL id 38 tid 32 eid 38 etid 32 c FloodingMessage n flooding k 10 pe 5 cid 49
+BS id 49 tid 32 eid 49 etid 32 c FloodingMessage n flooding k 10 pe 5
+SH sm 7 sg 1572866 pd 1.787487663439
+ES t 8.115680973635
+CL id 49 tid 32 eid 49 etid 32 c FloodingMessage n flooding k 10 pe 5 cid 50
+CL id 38 tid 32 eid 38 etid 32 c FloodingMessage n flooding k 10 pe 5 cid 50
+BS id 50 tid 32 eid 50 etid 32 c FloodingMessage n flooding k 10 pe 5
+SH sm 7 sg 1572867 pd 1.505784258637
+ES t 7.833977568833
+CL id 50 tid 32 eid 50 etid 32 c FloodingMessage n flooding k 10 pe 5 cid 51
 - INFO:Node 5 is 3
 BU id 7 txt "I'm DONE"
-DM id 102 tid 96 eid 102 etid 96 c omnetpp::cMessage n flooding k 10 pe 5
-MS id 7 d i=device/laptop,green;is=n
+DM id 38 tid 32 eid 38 etid 32 c omnetpp::cMessage n flooding k 10 pe 5
 
-E # 6 t 7.415 m 9 ce 2 msg 103
-CL id 103 tid 96 eid 103 etid 96 c FloodingMessage n flooding k 10 pe 6 cid 115
-BS id 115 tid 96 eid 115 etid 96 c FloodingMessage n flooding k 10 pe 6
-SH sm 9 sg 1572864 pd 0.649
-ES t 8.064
-CL id 115 tid 96 eid 115 etid 96 c FloodingMessage n flooding k 10 pe 6 cid 116
-CL id 103 tid 96 eid 103 etid 96 c FloodingMessage n flooding k 10 pe 6 cid 116
-BS id 116 tid 96 eid 116 etid 96 c FloodingMessage n flooding k 10 pe 6
-SH sm 9 sg 1572866 pd 1.045
-ES t 8.46
-CL id 116 tid 96 eid 116 etid 96 c FloodingMessage n flooding k 10 pe 6 cid 117
+E # 6 t 6.414952049783 m 9 ce 2 msg 39
+CL id 39 tid 32 eid 39 etid 32 c FloodingMessage n flooding k 10 pe 6 cid 51
+BS id 51 tid 32 eid 51 etid 32 c FloodingMessage n flooding k 10 pe 6
+SH sm 9 sg 1572864 pd 0.649446348251
+ES t 7.064398398034
+CL id 51 tid 32 eid 51 etid 32 c FloodingMessage n flooding k 10 pe 6 cid 52
+CL id 39 tid 32 eid 39 etid 32 c FloodingMessage n flooding k 10 pe 6 cid 52
+BS id 52 tid 32 eid 52 etid 32 c FloodingMessage n flooding k 10 pe 6
+SH sm 9 sg 1572866 pd 1.044612508308
+ES t 7.459564558091
+CL id 52 tid 32 eid 52 etid 32 c FloodingMessage n flooding k 10 pe 6 cid 53
 - INFO:Node 7 is 3
 BU id 9 txt "I'm DONE"
-DM id 103 tid 96 eid 103 etid 96 c omnetpp::cMessage n flooding k 10 pe 6
-MS id 9 d i=device/laptop,green;is=n
+DM id 39 tid 32 eid 39 etid 32 c omnetpp::cMessage n flooding k 10 pe 6
 
-E # 7 t 7.45 m 10 ce 3 msg 108
-CL id 108 tid 96 eid 108 etid 96 c FloodingMessage n flooding k 10 pe 7 cid 117
-BS id 117 tid 96 eid 117 etid 96 c FloodingMessage n flooding k 10 pe 7
-SH sm 10 sg 1572865 pd 1.672
-ES t 9.122
-CL id 117 tid 96 eid 117 etid 96 c FloodingMessage n flooding k 10 pe 7 cid 118
-CL id 108 tid 96 eid 108 etid 96 c FloodingMessage n flooding k 10 pe 7 cid 118
-BS id 118 tid 96 eid 118 etid 96 c FloodingMessage n flooding k 10 pe 7
-SH sm 10 sg 1572866 pd 0.151
-ES t 7.601
-CL id 118 tid 96 eid 118 etid 96 c FloodingMessage n flooding k 10 pe 7 cid 119
+E # 7 t 6.449608875154 m 10 ce 3 msg 44
+CL id 44 tid 32 eid 44 etid 32 c FloodingMessage n flooding k 10 pe 7 cid 53
+BS id 53 tid 32 eid 53 etid 32 c FloodingMessage n flooding k 10 pe 7
+SH sm 10 sg 1572865 pd 1.672211200325
+ES t 8.121820075479
+CL id 53 tid 32 eid 53 etid 32 c FloodingMessage n flooding k 10 pe 7 cid 54
+CL id 44 tid 32 eid 44 etid 32 c FloodingMessage n flooding k 10 pe 7 cid 54
+BS id 54 tid 32 eid 54 etid 32 c FloodingMessage n flooding k 10 pe 7
+SH sm 10 sg 1572866 pd 0.151230853665
+ES t 6.600839728819
+CL id 54 tid 32 eid 54 etid 32 c FloodingMessage n flooding k 10 pe 7 cid 55
 - INFO:Node 8 is 3
 BU id 10 txt "I'm DONE"
-DM id 108 tid 96 eid 108 etid 96 c omnetpp::cMessage n flooding k 10 pe 7
-MS id 10 d i=device/laptop,green;is=n
+DM id 44 tid 32 eid 44 etid 32 c omnetpp::cMessage n flooding k 10 pe 7
 
-E # 8 t 7.522 m 9 ce 4 msg 110
-DM id 110 tid 96 eid 110 etid 96 c omnetpp::cMessage n flooding k 10 pe 8
+E # 8 t 6.521761405612 m 9 ce 4 msg 46
 
-E # 9 t 7.601 m 7 ce 7 msg 118
-DM id 118 tid 96 eid 118 etid 96 c omnetpp::cMessage n flooding k 10 pe 9
+E # 9 t 6.600839728819 m 7 ce 7 msg 54
 
-E # 10 t 7.686 m 8 ce 3 msg 107
-CL id 107 tid 96 eid 107 etid 96 c FloodingMessage n flooding k 10 pe 10 cid 119
-BS id 119 tid 96 eid 119 etid 96 c FloodingMessage n flooding k 10 pe 10
-SH sm 8 sg 1572865 pd 0.412
-ES t 8.098
-CL id 119 tid 96 eid 119 etid 96 c FloodingMessage n flooding k 10 pe 10 cid 120
-CL id 107 tid 96 eid 107 etid 96 c FloodingMessage n flooding k 10 pe 10 cid 120
-BS id 120 tid 96 eid 120 etid 96 c FloodingMessage n flooding k 10 pe 10
-SH sm 8 sg 1572866 pd 3.15
-ES t 10.836
-CL id 120 tid 96 eid 120 etid 96 c FloodingMessage n flooding k 10 pe 10 cid 121
-CL id 107 tid 96 eid 107 etid 96 c FloodingMessage n flooding k 10 pe 10 cid 121
-BS id 121 tid 96 eid 121 etid 96 c FloodingMessage n flooding k 10 pe 10
-SH sm 8 sg 1572867 pd 2.04
-ES t 9.726
-CL id 121 tid 96 eid 121 etid 96 c FloodingMessage n flooding k 10 pe 10 cid 122
+E # 10 t 6.685761528466 m 8 ce 3 msg 43
+CL id 43 tid 32 eid 43 etid 32 c FloodingMessage n flooding k 10 pe 10 cid 55
+BS id 55 tid 32 eid 55 etid 32 c FloodingMessage n flooding k 10 pe 10
+SH sm 8 sg 1572865 pd 0.411577996243
+ES t 7.097339524709
+CL id 55 tid 32 eid 55 etid 32 c FloodingMessage n flooding k 10 pe 10 cid 56
+CL id 43 tid 32 eid 43 etid 32 c FloodingMessage n flooding k 10 pe 10 cid 56
+BS id 56 tid 32 eid 56 etid 32 c FloodingMessage n flooding k 10 pe 10
+SH sm 8 sg 1572866 pd 3.150169928676
+ES t 9.835931457142
+CL id 56 tid 32 eid 56 etid 32 c FloodingMessage n flooding k 10 pe 10 cid 57
+CL id 43 tid 32 eid 43 etid 32 c FloodingMessage n flooding k 10 pe 10 cid 57
+BS id 57 tid 32 eid 57 etid 32 c FloodingMessage n flooding k 10 pe 10
+SH sm 8 sg 1572867 pd 2.040314257942
+ES t 8.726075786408
+CL id 57 tid 32 eid 57 etid 32 c FloodingMessage n flooding k 10 pe 10 cid 58
 - INFO:Node 6 is 3
 BU id 8 txt "I'm DONE"
-DM id 107 tid 96 eid 107 etid 96 c omnetpp::cMessage n flooding k 10 pe 10
-MS id 8 d i=device/laptop,green;is=n
+DM id 43 tid 32 eid 43 etid 32 c omnetpp::cMessage n flooding k 10 pe 10
 
-E # 11 t 7.822 m 7 ce 3 msg 106
-DM id 106 tid 96 eid 106 etid 96 c omnetpp::cMessage n flooding k 10 pe 11
+E # 11 t 6.821783519955 m 7 ce 3 msg 42
 
-E # 12 t 8.064 m 4 ce 6 msg 115
-DM id 115 tid 96 eid 115 etid 96 c omnetpp::cMessage n flooding k 10 pe 12
+E # 12 t 7.064398398034 m 4 ce 6 msg 51
 
-E # 13 t 8.098 m 6 ce 10 msg 119
-CL id 119 tid 96 eid 119 etid 96 c FloodingMessage n flooding k 10 pe 13 cid 122
-BS id 122 tid 96 eid 122 etid 96 c FloodingMessage n flooding k 10 pe 13
-SH sm 6 sg 1572864 pd 0.058
-ES t 8.156
-CL id 122 tid 96 eid 122 etid 96 c FloodingMessage n flooding k 10 pe 13 cid 123
-CL id 119 tid 96 eid 119 etid 96 c FloodingMessage n flooding k 10 pe 13 cid 123
-BS id 123 tid 96 eid 123 etid 96 c FloodingMessage n flooding k 10 pe 13
-SH sm 6 sg 1572865 pd 0.318
-ES t 8.416
-CL id 123 tid 96 eid 123 etid 96 c FloodingMessage n flooding k 10 pe 13 cid 124
-CL id 119 tid 96 eid 119 etid 96 c FloodingMessage n flooding k 10 pe 13 cid 124
-BS id 124 tid 96 eid 124 etid 96 c FloodingMessage n flooding k 10 pe 13
-SH sm 6 sg 1572867 pd 0.091
-ES t 8.189
-CL id 124 tid 96 eid 124 etid 96 c FloodingMessage n flooding k 10 pe 13 cid 125
-CL id 119 tid 96 eid 119 etid 96 c FloodingMessage n flooding k 10 pe 13 cid 125
-BS id 125 tid 96 eid 125 etid 96 c FloodingMessage n flooding k 10 pe 13
-SH sm 6 sg 1572868 pd 0.02
-ES t 8.118
-CL id 125 tid 96 eid 125 etid 96 c FloodingMessage n flooding k 10 pe 13 cid 126
+E # 13 t 7.097339524709 m 6 ce 10 msg 55
+CL id 55 tid 32 eid 55 etid 32 c FloodingMessage n flooding k 10 pe 13 cid 58
+BS id 58 tid 32 eid 58 etid 32 c FloodingMessage n flooding k 10 pe 13
+SH sm 6 sg 1572864 pd 0.058384669093
+ES t 7.155724193802
+CL id 58 tid 32 eid 58 etid 32 c FloodingMessage n flooding k 10 pe 13 cid 59
+CL id 55 tid 32 eid 55 etid 32 c FloodingMessage n flooding k 10 pe 13 cid 59
+BS id 59 tid 32 eid 59 etid 32 c FloodingMessage n flooding k 10 pe 13
+SH sm 6 sg 1572865 pd 0.318356140842
+ES t 7.415695665551
+CL id 59 tid 32 eid 59 etid 32 c FloodingMessage n flooding k 10 pe 13 cid 60
+CL id 55 tid 32 eid 55 etid 32 c FloodingMessage n flooding k 10 pe 13 cid 60
+BS id 60 tid 32 eid 60 etid 32 c FloodingMessage n flooding k 10 pe 13
+SH sm 6 sg 1572867 pd 0.091161026124
+ES t 7.188500550833
+CL id 60 tid 32 eid 60 etid 32 c FloodingMessage n flooding k 10 pe 13 cid 61
+CL id 55 tid 32 eid 55 etid 32 c FloodingMessage n flooding k 10 pe 13 cid 61
+BS id 61 tid 32 eid 61 etid 32 c FloodingMessage n flooding k 10 pe 13
+SH sm 6 sg 1572868 pd 0.020425588399
+ES t 7.117765113108
+CL id 61 tid 32 eid 61 etid 32 c FloodingMessage n flooding k 10 pe 13 cid 62
 - INFO:Node 4 is 3
 BU id 6 txt "I'm DONE"
-DM id 119 tid 96 eid 119 etid 96 c omnetpp::cMessage n flooding k 10 pe 13
-MS id 6 d i=device/laptop,green;is=n
+DM id 55 tid 32 eid 55 etid 32 c omnetpp::cMessage n flooding k 10 pe 13
 
-E # 14 t 8.118 m 11 ce 13 msg 125
-CL id 125 tid 96 eid 125 etid 96 c FloodingMessage n flooding k 10 pe 14 cid 126
-BS id 126 tid 96 eid 126 etid 96 c FloodingMessage n flooding k 10 pe 14
-SH sm 11 sg 1572864 pd 1.808
-ES t 9.926
-CL id 126 tid 96 eid 126 etid 96 c FloodingMessage n flooding k 10 pe 14 cid 127
-CL id 125 tid 96 eid 125 etid 96 c FloodingMessage n flooding k 10 pe 14 cid 127
-BS id 127 tid 96 eid 127 etid 96 c FloodingMessage n flooding k 10 pe 14
-SH sm 11 sg 1572866 pd 2.041
-ES t 10.159
-CL id 127 tid 96 eid 127 etid 96 c FloodingMessage n flooding k 10 pe 14 cid 128
+E # 14 t 7.117765113108 m 11 ce 13 msg 61
+CL id 61 tid 32 eid 61 etid 32 c FloodingMessage n flooding k 10 pe 14 cid 62
+BS id 62 tid 32 eid 62 etid 32 c FloodingMessage n flooding k 10 pe 14
+SH sm 11 sg 1572864 pd 1.808369264275
+ES t 8.926134377383
+CL id 62 tid 32 eid 62 etid 32 c FloodingMessage n flooding k 10 pe 14 cid 63
+CL id 61 tid 32 eid 61 etid 32 c FloodingMessage n flooding k 10 pe 14 cid 63
+BS id 63 tid 32 eid 63 etid 32 c FloodingMessage n flooding k 10 pe 14
+SH sm 11 sg 1572866 pd 2.040892215912
+ES t 9.15865732902
+CL id 63 tid 32 eid 63 etid 32 c FloodingMessage n flooding k 10 pe 14 cid 64
 - INFO:Node 9 is 3
 BU id 11 txt "I'm DONE"
-DM id 125 tid 96 eid 125 etid 96 c omnetpp::cMessage n flooding k 10 pe 14
-MS id 11 d i=device/laptop,green;is=n
+DM id 61 tid 32 eid 61 etid 32 c omnetpp::cMessage n flooding k 10 pe 14
 
-E # 15 t 8.155 m 5 ce 3 msg 105
-DM id 105 tid 96 eid 105 etid 96 c omnetpp::cMessage n flooding k 10 pe 15
+E # 15 t 7.154491146531 m 5 ce 3 msg 41
 
-E # 16 t 8.156 m 3 ce 13 msg 122
-DM id 122 tid 96 eid 122 etid 96 c omnetpp::cMessage n flooding k 10 pe 16
+E # 16 t 7.155724193802 m 3 ce 13 msg 58
 
-E # 17 t 8.189 m 9 ce 13 msg 124
-DM id 124 tid 96 eid 124 etid 96 c omnetpp::cMessage n flooding k 10 pe 17
+E # 17 t 7.188500550833 m 9 ce 13 msg 60
 
-E # 18 t 8.224 m 6 ce 1 msg 96
-DM id 96 tid 96 eid 96 etid 96 c omnetpp::cMessage n flooding k 10 pe 18
+E # 18 t 7.223524422036 m 6 ce 1 msg 32
 
-E # 19 t 8.416 m 4 ce 13 msg 123
-DM id 123 tid 96 eid 123 etid 96 c omnetpp::cMessage n flooding k 10 pe 19
+E # 19 t 7.415695665551 m 4 ce 13 msg 59
 
-E # 20 t 8.436 m 2 ce 2 msg 101
-DM id 101 tid 96 eid 101 etid 96 c omnetpp::cMessage n flooding k 10 pe 20
+E # 20 t 7.435123408958 m 2 ce 2 msg 37
 
-E # 21 t 8.46 m 6 ce 6 msg 116
-DM id 116 tid 96 eid 116 etid 96 c omnetpp::cMessage n flooding k 10 pe 21
+E # 21 t 7.459564558091 m 6 ce 6 msg 52
 
-E # 22 t 8.607 m 10 ce 4 msg 111
-DM id 111 tid 96 eid 111 etid 96 c omnetpp::cMessage n flooding k 10 pe 22
+E # 22 t 7.607055418287 m 10 ce 4 msg 47
 
-E # 23 t 8.835 m 10 ce 5 msg 114
-DM id 114 tid 96 eid 114 etid 96 c omnetpp::cMessage n flooding k 10 pe 23
+E # 23 t 7.833977568833 m 10 ce 5 msg 50
 
-E # 24 t 9.116 m 8 ce 5 msg 113
-DM id 113 tid 96 eid 113 etid 96 c omnetpp::cMessage n flooding k 10 pe 24
+E # 24 t 8.115680973635 m 8 ce 5 msg 49
 
-E # 25 t 9.122 m 4 ce 7 msg 117
-DM id 117 tid 96 eid 117 etid 96 c omnetpp::cMessage n flooding k 10 pe 25
+E # 25 t 8.121820075479 m 4 ce 7 msg 53
 
-E # 26 t 9.174 m 11 ce 2 msg 104
-DM id 104 tid 96 eid 104 etid 96 c omnetpp::cMessage n flooding k 10 pe 26
+E # 26 t 8.173773282732 m 11 ce 2 msg 40
 
-E # 27 t 9.281 m 2 ce 5 msg 112
-DM id 112 tid 96 eid 112 etid 96 c omnetpp::cMessage n flooding k 10 pe 27
+E # 27 t 8.27973864608 m 2 ce 5 msg 48
 
-E # 28 t 9.726 m 11 ce 10 msg 121
-DM id 121 tid 96 eid 121 etid 96 c omnetpp::cMessage n flooding k 10 pe 28
+E # 28 t 8.726075786408 m 11 ce 10 msg 57
 
-E # 29 t 9.926 m 5 ce 14 msg 126
-DM id 126 tid 96 eid 126 etid 96 c omnetpp::cMessage n flooding k 10 pe 29
+E # 29 t 8.926134377383 m 5 ce 14 msg 62
 
-E # 30 t 10.159 m 8 ce 14 msg 127
-DM id 127 tid 96 eid 127 etid 96 c omnetpp::cMessage n flooding k 10 pe 30
+E # 30 t 9.15865732902 m 8 ce 14 msg 63
 
-E # 31 t 10.353 m 6 ce 4 msg 109
-DM id 109 tid 96 eid 109 etid 96 c omnetpp::cMessage n flooding k 10 pe 31
+E # 31 t 9.353071580592 m 6 ce 4 msg 45
 
-E # 32 t 10.836 m 7 ce 10 msg 120
-DM id 120 tid 96 eid 120 etid 96 c omnetpp::cMessage n flooding k 10 pe 32
-SE e 0 c 13 m "No more events, simulation completed -- at t=10.836s, event #32"
+E # 32 t 9.835931457142 m 7 ce 10 msg 56
+SE e 0 c 13 m "No more events, simulation completed -- at t=9.835931457142s, event #32"

@@ -29,6 +29,6 @@ simple Flooding
         // The time at which the first message is sent
         double startTime @unit(s);
     gates:
-        // This is port supporting bidirectional communications
+        // This is a port supporting bidirectional communications
         inout port[];
 }

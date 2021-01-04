@@ -1,4 +1,4 @@
 #!/bin/sh
 cd `dirname $0`
-../src/flooding -n .:../src $*
+../src/ds.ex2.flooding -n .:../src $*
 # for shared lib, use: opp_run -l ../src/flooding -n .:../src $*
